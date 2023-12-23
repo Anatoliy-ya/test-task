@@ -1,0 +1,56 @@
+@import "@/styles/function.scss";
+
+.progressIndicator {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: pxRem(65) pxRem(65);
+  width: 76%;
+  height: pxRem(8);
+  background-color: #d4d4d4;
+
+  .activeProgress {
+    position: absolute;
+    height: 100%;
+    background-color: #5558FA;
+    left: 0;
+    transition: width 0.3s ease; // Плавное изменение ширины
+  }
+
+  .dot {
+    height: pxRem(20);
+    width: pxRem(20);
+    background-color: #adadad;
+    border-radius: 50%;
+    position: relative;
+
+    &.active {
+      background-color: #5558FA;
+    }
+
+    &.completed {
+      background-color: #5558FA;
+      &::after { 
+        content: '✓';
+        width: pxRem(6);
+        height: pxRem(6);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        color: #fff; 
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .progressIndicator {
+    margin: pxRem(50) pxRem(10);
+    width: 90%;
+  }
+}

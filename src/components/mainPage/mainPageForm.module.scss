@@ -1,0 +1,78 @@
+@import "@/styles/function.scss";
+
+
+.formMainPage {
+  display: flex;
+  flex-direction: column;
+  margin-left: pxRem(20);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: pxRem(15);
+  position: relative;
+}
+
+.inputMainPage {
+  width: pxRem(400);
+  height: pxRem(44);
+  border: 2px solid #ccc;
+  border-radius: pxRem(4);
+  background-color: #0000000A;
+  margin-top: pxRem(10);
+}
+
+.button {
+  margin-top: pxRem(50);
+}
+
+.errorMessage {
+  position: absolute;
+  top: pxRem(70);
+  font-size: 14px;
+  color: red;
+  margin: 5px 0;
+  max-height: 20px; 
+  overflow: auto; 
+}
+
+/* Медиазапросы */
+@media (max-width: 768px) {
+  .formMainPage {
+    margin-left: pxRem(10);
+  }
+
+  .inputMainPage {
+    width: pxRem(300);
+    height: pxRem(38);
+  }
+
+  .button {
+    margin-top: pxRem(30); 
+  }
+
+  .errorMessage {
+    top: pxRem(60);
+  }
+}
+
+@media (max-width: 480px) {
+  .formMainPage {
+    margin-left: pxRem(5);
+  }
+
+  
+    .inputMainPage {
+      width: pxRem(250);
+      height: pxRem(38); 
+  }
+
+  .button {
+    margin-top: pxRem(20); 
+  }
+
+  .errorMessage {
+    top: pxRem(55);
+  }
+}

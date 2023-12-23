@@ -1,0 +1,19 @@
+@import "@/styles/function.scss";
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: pxRem(80);
+  height: pxRem(80);
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: pxRem(25);
+  background-color: #D5E4F7;
+  font-size: pxRem(45);
+  font-weight: 300;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+

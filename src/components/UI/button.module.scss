@@ -1,0 +1,31 @@
+@import "@/styles/function.scss";
+
+
+
+.button {
+  padding-inline: pxRem(20);
+  height: pxRem(44);
+  border-radius: pxRem(5);
+  font-size: pxRem(15);
+
+  &.Start {
+    border: none;
+    color: #FFFFFF;
+    background-color: #5558FA;
+  }
+
+  &.Back {
+    border: 2px solid #5558FA;
+    color: #5558FA;
+    background-color: #FFFFFF;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: pxRem(12);
+    padding-inline: pxRem(15);
+    height: pxRem(38);
+  }
+}
+

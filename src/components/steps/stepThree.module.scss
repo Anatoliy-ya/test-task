@@ -1,0 +1,98 @@
+@import "@/styles/function.scss";
+
+
+.formAbout {
+  display: flex;
+  flex-direction: column;
+  margin-left: pxRem(70);
+  margin-right: pxRem(75);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: pxRem(15);
+  position: relative;
+
+}
+
+.inputGroup label {
+  font-weight: 500px;
+
+}
+
+.textareaAbout {
+  width: pxRem(740);
+  height: pxRem(80);
+  border: 1px solid #ccc;
+  border-radius: pxRem(5);
+  margin-top: pxRem(10);
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: pxRem(60);
+}
+
+.errorMessage {
+  display: flex;
+
+}
+
+.textCount {
+  position: absolute;
+  display: block;
+  right: 0;
+}
+
+.errorMessage p{
+  left: 0;
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  margin: 5px 0;
+  max-height: 20px; 
+  overflow: auto; 
+}
+
+
+@media (max-width: 768px) {
+  .formAbout {
+    margin-left: pxRem(50);
+    margin-right: pxRem(50);
+  }
+
+  .textareaAbout {
+    width: 100%;
+  }
+
+  .buttonGroup {
+    margin-top: pxRem(30); 
+  }
+
+  .textCount {
+    right: pxRem(10);
+  }
+}
+
+@media (max-width: 480px) {
+  .formAbout {
+    margin-left: pxRem(20);
+    margin-right: pxRem(20);
+  }
+
+  .textareaAbout {
+    width: 100%;
+  }
+
+  .buttonGroup {
+    margin-top: pxRem(20); 
+  }
+
+  .textCount {
+    right: pxRem(5);
+  }
+}

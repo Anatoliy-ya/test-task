@@ -1,0 +1,208 @@
+@import "@/styles/function.scss";
+
+.formStepOne {
+  display: flex;
+  flex-direction: column;
+  margin-left: pxRem(70);
+  margin-right: pxRem(75);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: pxRem(10);
+  position: relative;
+}
+
+.inputStepTwo {
+  width: pxRem(300);
+  height: pxRem(44);
+  border: 2px solid #cccccc5b;
+  border-radius: pxRem(4);
+  background-color: #ffffff;
+}
+
+.buttonIncrement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: pxRem(10);
+  width: pxRem(44);
+  height: pxRem(44);
+  padding: pxRem(10);
+  border-radius: pxRem(5);
+  font-size: pxRem(25);
+  border: 2px solid #5558FA;
+  color: #5558FA;
+  background-color: #FFFFFF;
+}
+
+.deleteIcon { 
+  margin-left: pxRem(15);
+}
+
+.checkboxGroup {
+  position: relative;
+  margin-top: pxRem(15);
+}
+
+.checkboxContainer {
+  position: relative;
+  margin-top: pxRem(3);
+  
+}
+
+.checkboxGroup input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkboxLabel {
+  padding-left: pxRem(30);
+  font-size: pxRem(18);
+  cursor: pointer;
+}
+
+.checkboxGroup label::before {
+  content: '';
+  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: pxRem(16); 
+  height: pxRem(16); 
+  border: 2px solid #e2e2e2;
+  border-radius: 4px;
+  z-index: 1; 
+}
+
+.checkboxGroup input[type="checkbox"]:checked + label::after {
+  content: '✓'; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: pxRem(16); 
+  height: pxRem(16); 
+  border: 2px solid #5558FA;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+
+}
+
+
+// Radio
+
+.radioGroup{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: pxRem(15);
+}
+
+.radioContainer {
+  position: relative;
+  margin-top: pxRem(3);
+}
+
+.radioLabel {
+  padding-left: pxRem(30);
+  font-size: pxRem(18);
+  cursor: pointer;
+}
+
+.radioContainer input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.radioGroup label::before {
+  content: '';
+  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: pxRem(16); 
+  height: pxRem(16); 
+  border: 2px solid #e2e2e2;
+  border-radius: 50%; 
+
+}
+
+.radioGroup input[type="radio"]:checked + label::after {
+  content: ''; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: pxRem(8); 
+  height: pxRem(8); 
+  background-color: #5558FA;
+  border: 2px solid #5558FA;
+  border-radius: 50%;
+}
+
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: pxRem(60);
+}
+
+
+@import "@/styles/function.scss";
+
+/* Основные стили */
+.formStepOne {
+  display: flex;
+  flex-direction: column;
+  margin-left: pxRem(70);
+  margin-right: pxRem(75);
+}
+/* Остальные стили... */
+
+/* Медиазапросы */
+@media (max-width: 768px) {
+  .formStepOne {
+    margin-left: pxRem(50);
+    margin-right: pxRem(50);
+  }
+
+
+
+
+}
+
+@media (max-width: 480px) {
+  .formStepOne {
+    margin-left: pxRem(20);
+    margin-right: pxRem(20);
+  }
+
+  .inputStepTwo, .deleteIcon, .checkboxContainer, .radioContainer {
+    width: 100%; /* Полная ширина на мобильных устройствах */
+  }
+
+  .buttonGroup {
+
+    margin-top: pxRem(30);
+  }
+}

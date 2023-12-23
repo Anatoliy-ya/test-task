@@ -1,0 +1,127 @@
+@import "@/styles/function.scss";
+
+
+.formStepOne {
+  display: flex;
+  flex-direction: column;
+  margin-left: pxRem(70);
+  margin-right: pxRem(75);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: pxRem(20);
+  position: relative;
+}
+
+.inputGroup label{
+  font-weight: 500;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: pxRem(60);
+
+}
+
+.inputStepOne {
+  width: pxRem(300);
+  height: pxRem(44);
+  border: 2px solid #cccccc5b;
+  border-radius: pxRem(4);
+  background-color: #ffffff;
+  margin-top: pxRem(10);
+}
+
+.selectStepOne {
+  width: pxRem(314);
+  height: pxRem(49);
+  border: 2px solid #cccccc5b;
+  border-radius: pxRem(4);
+  background-color: #ffffff;
+  margin-top: pxRem(10);
+}
+
+.errorMessage {
+  position: absolute;
+  top: pxRem(70);
+  font-size: 14px;
+  color: red;
+  margin: 5px 0;
+  max-height: 20px; 
+  overflow: auto; 
+}
+
+@import "@/styles/function.scss";
+
+.formStepOne {
+  display: flex;
+  flex-direction: column;
+  margin-left: pxRem(70);
+  margin-right: pxRem(75);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: pxRem(20);
+  position: relative;
+}
+
+.inputGroup label {
+  font-weight: 500;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: pxRem(60);
+}
+
+.inputStepOne, .selectStepOne {
+  width: pxRem(300);
+  height: pxRem(44);
+  border: 2px solid #cccccc5b;
+  border-radius: pxRem(4);
+  background-color: #ffffff;
+  margin-top: pxRem(10);
+}
+
+.selectStepOne {
+  height: pxRem(50); 
+  width: pxRem(320);
+}
+
+.errorMessage {
+  position: absolute;
+  top: pxRem(70);
+  font-size: 14px;
+  color: red;
+  margin: 5px 0;
+  max-height: 20px;
+  overflow: auto;
+}
+
+/* Медиазапросы */
+@media (max-width: 768px) {
+  .formStepOne {
+    margin-left: pxRem(50);
+    margin-right: pxRem(50);
+  }
+}
+
+@media (max-width: 480px) {
+  .formStepOne {
+    margin-left: pxRem(20);
+    margin-right: pxRem(20);
+  }
+
+
+  .buttonGroup {
+    margin-top: pxRem(30);
+  }
+}

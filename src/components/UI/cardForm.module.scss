@@ -1,0 +1,16 @@
+@import "@/styles/function.scss";
+
+.cardForm {
+  margin: pxRem(15);
+  width: pxRem(900);
+  height: 100%;
+  padding-bottom: pxRem(50);
+  background-color: #FFFFFF;
+  border-radius: pxRem(12);
+}
+
+@media (max-width: 768px) {
+  .cardForm {
+  width: pxRem(550);
+  }
+}

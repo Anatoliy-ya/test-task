@@ -1,0 +1,65 @@
+@import "@/styles/function.scss";
+
+.modal {
+  display: none;
+
+  &.active {
+    display: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  width: pxRem(460);
+  height: pxRem(300);
+  border-radius: pxRem(10);
+  position: relative;
+}
+
+.modalContent img { 
+  width: pxRem(90);
+  height: pxRem(90);
+}
+
+.modalTitle {
+  display: flex;
+  position: absolute;
+  top: pxRem(30);
+  font-size: pxRem(25);
+  font-weight: 600;
+}
+
+.modalTitleError {
+  display: flex;
+  position: absolute;
+  top: pxRem(30);
+  left: pxRem(30);
+  font-size: pxRem(25);
+  font-weight: 600;
+}
+
+.modalButtonError {
+  display: flex;
+  position: absolute;
+  bottom: pxRem(30);
+  right: pxRem(30);
+}
+
+.modalButton { 
+  display: flex;
+  position: absolute;
+  bottom: pxRem(20);
+}

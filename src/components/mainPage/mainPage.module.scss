@@ -1,0 +1,75 @@
+@import "@/styles/function.scss";
+
+.mainPage{
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:baseline;
+}
+.userInfo p {
+  font-size: pxRem(26);
+  font-weight: 600;
+}
+
+.userInfo a {
+  text-decoration: none;
+  margin-right: pxRem(10);
+  color: #5558FA;
+  font-weight: 400;
+  font-size: pxRem(14);
+}
+
+.userInfo img {
+  display:inline-block;
+  margin-right: pxRem(5);
+  margin-top: pxRem(5);
+}
+
+.line {
+  display: flex;
+  position: relative;
+  left: pxRem(25);
+  height: 1px; 
+  background-color: #e4e3e3; 
+  width: pxRem(850); 
+}
+
+
+/* Медиазапросы */
+@media (max-width: 768px) {
+
+
+  .userInfo p {
+    font-size: pxRem(22); 
+  }
+
+  .userInfo a {
+    font-size: pxRem(12); 
+  }
+
+  .line {
+    left: pxRem(15);
+    width: pxRem(700); 
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .userInfo p {
+    font-size: pxRem(18); 
+  }
+
+  .userInfo a {
+    font-size: pxRem(10); 
+  }
+
+  .line {
+    left: pxRem(10);
+    width: 100%; 
+  }
+}
